@@ -1,0 +1,19 @@
+import numpy as np
+import PIL.Image
+
+class Image(object):
+
+    VALID_EXTENSIONS = '.png', '.jpg', '.jpeg'
+
+    def __init__(self, filename):
+        self.filename = filename
+        self.contents = self.load_image(filename)
+
+
+    @staticmethod
+    def load_image(filename):
+        ext = os.path.splitext(filename)[-1]
+        if ext in self.VALID_EXTENSIONS:
+            return numpy.asarray(PIL.Image.open(filename).convert("L"))
+        else:
+            raise Exception("Unsupported filetype")

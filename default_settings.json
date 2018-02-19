@@ -1,0 +1,13 @@
+{
+  "temperature": 500.0, 
+  "synchronous": false, 
+  "async_speed": 400, 
+  "match_percent": 99.9, 
+  "flipped_noise": false, 
+  "stop_percentage": null, 
+  "image_lib_dir": "./images", 
+  "size": [
+    90, 
+    90
+  ]
+}
